@@ -1,5 +1,6 @@
 <canvas id = "canvas1" width = "4800", height = "4800">
 </canvas>
+<script type="text/javascript" src="js/ImageGenerator.js"></script>
 <script type = "text/javascript">       
     
     var c = document.getElementById("canvas1");
@@ -8,6 +9,7 @@
     
     var img = new Image();
     img.onload = function() {
+        var i = new ImageGenerator(img, c);
     };
     img.src = "luntik.jpg";
 </script>
