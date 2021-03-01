@@ -1,5 +1,18 @@
-<canvas id = "canvas1" width = "4800", height = "4800">
+<canvas id = "canvas1" width = "100", height = "100">
 </canvas>
+<div>
+      <p id="results">Results will be displayed here</p>
+      <span id="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span id="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
 <script type="text/javascript" src="js/ImageGenerator.js"></script>
 <script type = "text/javascript">       
     
@@ -10,6 +23,27 @@
     var img = new Image();
     img.onload = function() {
         var i = new ImageGenerator(img, c);
+        let p1 = document.getElementById('c1')
+        , p2 = document.getElementById('c2')
+        , p3 = document.getElementById('c3')
+        , p4 = document.getElementById('c4')
+        , p5 = document.getElementById('c5')
+        , p6 = document.getElementById('c6')
+        , p7 = document.getElementById('c7')
+        , p8 = document.getElementById('c8')
+        , p9 = document.getElementById('c9')
+        , p10 = document.getElementById('c10');
+        
+      p1.style.backgroundColor = i.colors[0];
+      p2.style.backgroundColor = i.colors[1];
+      p3.style.backgroundColor = i.colors[2];
+      p4.style.backgroundColor = i.colors[3];
+      p5.style.backgroundColor = i.colors[4];
+      p6.style.backgroundColor = i.colors[5];
+      p7.style.backgroundColor = i.colors[6];
+      p8.style.backgroundColor = i.colors[7];
+      p9.style.backgroundColor = i.colors[8];
+      p10.style.backgroundColor = i.colors[9];
     };
     img.src = "luntik.jpg";
 </script>
